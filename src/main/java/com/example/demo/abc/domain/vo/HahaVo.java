@@ -30,18 +30,6 @@ public class HahaVo {
     private String name;
 
     /**
-     * 当前页
-     */
-    @ApiModelProperty(value = "当前页")
-    Integer currentPage = 1;
-
-    /**
-     * 每页条数
-     */
-    @ApiModelProperty(value = "每页条数")
-    Integer pageSize = 20;
-
-    /**
      * 创建时间
      */
     @ApiModelProperty(value = "创建时间")

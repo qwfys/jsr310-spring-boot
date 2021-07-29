@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Api(tags = "Haha管理")
@@ -24,8 +23,7 @@ public class HahaController {
     @ApiOperation(value = "查询Haha记录")
     @PostMapping(value = "/abc/hahas/list")
     public List<HahaVo> findAll(FindAllHahaParam param) {
-        List<HahaVo> hahaVoList = new ArrayList<>();
-
+        List<HahaVo> hahaVoList = hahaBusiness.findAll(param);
         return hahaVoList;
     }
 }

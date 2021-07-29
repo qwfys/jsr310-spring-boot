@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class HahaBusinessImpl implements HahaBusiness {
 
-    @Autowired
-    private HahaMapper hahaMapper;
+    //@Autowired
+    //private HahaMapper hahaMapper;
 
 }
